@@ -1,0 +1,2 @@
+source /home/matit/esp/idf/esp-idf/examples/get-started/hello_world/build/gdbinit/symbols
+source /home/matit/esp/idf/esp-idf/examples/get-started/hello_world/build/gdbinit/connect
