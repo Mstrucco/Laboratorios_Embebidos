@@ -1,0 +1,136 @@
+Command: /home/matit/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python /home/matit/esp/idf/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/matit/esp/projects/Ejercicio_2/build/Ejercicio_2.elf /home/matit/esp/projects/Ejercicio_2/build/bootloader/bootloader.elf -m '/home/matit/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python' '/home/matit/esp/idf/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6364
+ho 0 tail 12 room 4
+load:0x40078000,len:15880
+ho 0 tail 12 room 4
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (30) boot: ESP-IDF v5.5-dev-2715-ga45d713b03-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Apr 15 2025 22:36:08[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09b28h ( 39720) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=00019b50 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00019b74 vaddr=3ffb0000 size=022f4h (  8948) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001be70 vaddr=40080000 size=041a8h ( 16808) load[0m
+[0;32mI (123) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=166fch ( 91900) map[0m
+[0;32mI (155) esp_image: segment 5: paddr=00036724 vaddr=400841a8 size=08ac4h ( 35524) load[0m
+[0;32mI (175) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (194) cpu_start: Pro cpu start user code[0m
+[0;32mI (194) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (194) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     Ejercicio_2[0m
+[0;32mI (199) app_init: App version:      1[0m
+[0;32mI (202) app_init: Compile time:     Apr 15 2025 22:35:49[0m
+[0;32mI (207) app_init: ELF file SHA256:  84b8cb0b3...[0m
+[0;32mI (211) app_init: ESP-IDF:          v5.5-dev-2715-ga45d713b03-dirty[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (236) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (241) heap_init: At 3FFB2C80 len 0002D380 (180 KiB): DRAM[0m
+[0;32mI (246) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (257) heap_init: At 4008CC6C len 00013394 (76 KiB): IRAM[0m
+[0;32mI (263) spi_flash: detected chip: generic[0m
+[0;32mI (266) spi_flash: flash io: dio[0m
+[0;33mW (269) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (281) main_task: Started on CPU0[0m
+[0;32mI (291) main_task: Calling app_main()[0m
+[0;32mI (291) EJ2: Iniciando medición con X = 10000[0m
+[0;32mI (291) EJ2: Tiempo medido (esp_timer): 317 us[0m
+[0;32mI (291) EJ2: Ciclos de CPU: 50766[0m
+[0;32mI (291) EJ2: Tiempo calculado desde ciclos: 317.29 us[0m
+[0;32mI (301) EJ2: CPI promedio: 5.08[0m
+[0;32mI (301) EJ2: Resultados finales: v1 + v2: PASS, v1 + 10: PASS, v1 % v2: PASS, v1 * v2: PASS, v1 / v2: PASS[0m
+
+[0;32mI (311) EJ2: Iniciando medición con X = 100000[0m
+[0;32mI (321) EJ2: Tiempo medido (esp_timer): 3133 us[0m
+[0;32mI (321) EJ2: Ciclos de CPU: 501332[0m
+[0;32mI (321) EJ2: Tiempo calculado desde ciclos: 3133.32 us[0m
+[0;32mI (331) EJ2: CPI promedio: 5.01[0m
+[0;32mI (331) EJ2: Resultados finales: v1 + v2: PASS, v1 + 10: PASS, v1 % v2: PASS, v1 * v2: PASS, v1 / v2: PASS[0m
+
+[0;32mI (341) EJ2: Iniciando medición con X = 1[0m
+[0;32mI (341) EJ2: Tiempo medido (esp_timer): 1 us[0m
+[0;32mI (351) EJ2: Ciclos de CPU: 118[0m
+[0;32mI (351) EJ2: Tiempo calculado desde ciclos: 0.74 us[0m
+[0;32mI (351) EJ2: CPI promedio: 118.00[0m
+[0;32mI (361) EJ2: Resultados finales: v1 + v2: PASS, v1 + 10: PASS, v1 % v2: PASS, v1 * v2: PASS, v1 / v2: PASS[0m
+
+[0;32mI (371) EJ2: Iniciando medición con X = 300[0m
+[0;32mI (371) EJ2: Tiempo medido (esp_timer): 10 us[0m
+[0;32mI (371) EJ2: Ciclos de CPU: 1612[0m
+[0;32mI (381) EJ2: Tiempo calculado desde ciclos: 10.07 us[0m
+[0;32mI (381) EJ2: CPI promedio: 5.37[0m
+[0;32mI (381) EJ2: Resultados finales: v1 + v2: PASS, v1 + 10: PASS, v1 % v2: PASS, v1 * v2: PASS, v1 / v2: PASS[0m
+
+[0;32mI (391) EJ2: Iniciando medición con X = 400[0m
+[0;32mI (401) EJ2: Tiempo medido (esp_timer): 13 us[0m
+[0;32mI (401) EJ2: Ciclos de CPU: 2112[0m
+[0;32mI (411) EJ2: Tiempo calculado desde ciclos: 13.20 us[0m
+[0;32mI (411) EJ2: CPI promedio: 5.28[0m
+[0;32mI (411) EJ2: Resultados finales: v1 + v2: PASS, v1 + 10: PASS, v1 % v2: PASS, v1 * v2: PASS, v1 / v2: PASS[0m
+
+[0;32mI (421) EJ2: Iniciando medición con X = 500[0m
+[0;32mI (431) EJ2: Tiempo medido (esp_timer): 16 us[0m
+[0;32mI (431) EJ2: Ciclos de CPU: 2612[0m
+[0;32mI (431) EJ2: Tiempo calculado desde ciclos: 16.33 us[0m
+[0;32mI (441) EJ2: CPI promedio: 5.22[0m
+[0;32mI (441) EJ2: Resultados finales: v1 + v2: PASS, v1 + 10: PASS, v1 % v2: PASS, v1 * v2: PASS, v1 / v2: PASS[0m
+
+[0;32mI (451) EJ2: Iniciando medición con X = 600[0m
+[0;32mI (451) EJ2: Tiempo medido (esp_timer): 19 us[0m
+[0;32mI (461) EJ2: Ciclos de CPU: 3112[0m
+[0;32mI (461) EJ2: Tiempo calculado desde ciclos: 19.45 us[0m
+[0;32mI (471) EJ2: CPI promedio: 5.19[0m
+[0;32mI (471) EJ2: Resultados finales: v1 + v2: PASS, v1 + 10: PASS, v1 % v2: PASS, v1 * v2: PASS, v1 / v2: PASS[0m
+
+[0;32mI (481) EJ2: Iniciando medición con X = 700[0m
+[0;32mI (481) EJ2: Tiempo medido (esp_timer): 23 us[0m
+[0;32mI (491) EJ2: Ciclos de CPU: 3612[0m
+[0;32mI (491) EJ2: Tiempo calculado desde ciclos: 22.58 us[0m
+[0;32mI (491) EJ2: CPI promedio: 5.16[0m
+[0;32mI (501) EJ2: Resultados finales: v1 + v2: PASS, v1 + 10: PASS, v1 % v2: PASS, v1 * v2: PASS, v1 / v2: PASS[0m
+
+[0;32mI (511) EJ2: Iniciando medición con X = 800[0m
+[0;32mI (511) EJ2: Tiempo medido (esp_timer): 26 us[0m
+[0;32mI (511) EJ2: Ciclos de CPU: 4112[0m
+[0;32mI (521) EJ2: Tiempo calculado desde ciclos: 25.70 us[0m
+[0;32mI (521) EJ2: CPI promedio: 5.14[0m
+[0;32mI (531) EJ2: Resultados finales: v1 + v2: PASS, v1 + 10: PASS, v1 % v2: PASS, v1 * v2: PASS, v1 / v2: PASS[0m
+
+[0;32mI (541) EJ2: Iniciando medición con X = 900[0m
+[0;32mI (541) EJ2: Tiempo medido (esp_timer): 29 us[0m
+[0;32mI (541) EJ2: Ciclos de CPU: 4612[0m
+[0;32mI (551) EJ2: Tiempo calculado desde ciclos: 28.83 us[0m
+[0;32mI (551) EJ2: CPI promedio: 5.12[0m
+[0;32mI (551) EJ2: Resultados finales: v1 + v2: PASS, v1 + 10: PASS, v1 % v2: PASS, v1 * v2: PASS, v1 / v2: PASS[0m
+
+[0;32mI (561) EJ2: Iniciando medición con X = 1000[0m
+[0;32mI (571) EJ2: Tiempo medido (esp_timer): 32 us[0m
+[0;32mI (571) EJ2: Ciclos de CPU: 5112[0m
+[0;32mI (571) EJ2: Tiempo calculado desde ciclos: 31.95 us[0m
+[0;32mI (581) EJ2: CPI promedio: 5.11[0m
+[0;32mI (581) EJ2: Resultados finales: v1 + v2: PASS, v1 + 10: PASS, v1 % v2: PASS, v1 * v2: PASS, v1 / v2: PASS[0m
+
+[0;32mI (591) main_task: Returned from app_main()[0m

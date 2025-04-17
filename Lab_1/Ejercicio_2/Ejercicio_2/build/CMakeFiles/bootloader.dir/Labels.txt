@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/matit/esp/projects/Ejercicio_2/build/CMakeFiles/bootloader
+/home/matit/esp/projects/Ejercicio_2/build/CMakeFiles/bootloader.rule
+/home/matit/esp/projects/Ejercicio_2/build/CMakeFiles/bootloader-complete.rule
+/home/matit/esp/projects/Ejercicio_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/matit/esp/projects/Ejercicio_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/matit/esp/projects/Ejercicio_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/matit/esp/projects/Ejercicio_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/matit/esp/projects/Ejercicio_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/matit/esp/projects/Ejercicio_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/matit/esp/projects/Ejercicio_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

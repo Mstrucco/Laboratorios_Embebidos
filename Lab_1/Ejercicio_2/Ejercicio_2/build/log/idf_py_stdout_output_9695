@@ -1,0 +1,60 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/matit/esp/projects/Ejercicio_2/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "Ejercicio_2" version: 1
+-- Adding linker script /home/matit/esp/projects/Ejercicio_2/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/matit/esp/projects/Ejercicio_2/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-reent-funcs.ld
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/matit/esp/idf/esp-idf/components/app_trace /home/matit/esp/idf/esp-idf/components/app_update /home/matit/esp/idf/esp-idf/components/bootloader /home/matit/esp/idf/esp-idf/components/bootloader_support /home/matit/esp/idf/esp-idf/components/bt /home/matit/esp/idf/esp-idf/components/cmock /home/matit/esp/idf/esp-idf/components/console /home/matit/esp/idf/esp-idf/components/cxx /home/matit/esp/idf/esp-idf/components/driver /home/matit/esp/idf/esp-idf/components/efuse /home/matit/esp/idf/esp-idf/components/esp-tls /home/matit/esp/idf/esp-idf/components/esp_adc /home/matit/esp/idf/esp-idf/components/esp_app_format /home/matit/esp/idf/esp-idf/components/esp_bootloader_format /home/matit/esp/idf/esp-idf/components/esp_coex /home/matit/esp/idf/esp-idf/components/esp_common /home/matit/esp/idf/esp-idf/components/esp_driver_ana_cmpr /home/matit/esp/idf/esp-idf/components/esp_driver_bitscrambler /home/matit/esp/idf/esp-idf/components/esp_driver_cam /home/matit/esp/idf/esp-idf/components/esp_driver_dac /home/matit/esp/idf/esp-idf/components/esp_driver_gpio /home/matit/esp/idf/esp-idf/components/esp_driver_gptimer /home/matit/esp/idf/esp-idf/components/esp_driver_i2c /home/matit/esp/idf/esp-idf/components/esp_driver_i2s /home/matit/esp/idf/esp-idf/components/esp_driver_isp /home/matit/esp/idf/esp-idf/components/esp_driver_jpeg /home/matit/esp/idf/esp-idf/components/esp_driver_ledc /home/matit/esp/idf/esp-idf/components/esp_driver_mcpwm /home/matit/esp/idf/esp-idf/components/esp_driver_parlio /home/matit/esp/idf/esp-idf/components/esp_driver_pcnt /home/matit/esp/idf/esp-idf/components/esp_driver_ppa /home/matit/esp/idf/esp-idf/components/esp_driver_rmt /home/matit/esp/idf/esp-idf/components/esp_driver_sdio /home/matit/esp/idf/esp-idf/components/esp_driver_sdm /home/matit/esp/idf/esp-idf/components/esp_driver_sdmmc /home/matit/esp/idf/esp-idf/components/esp_driver_sdspi /home/matit/esp/idf/esp-idf/components/esp_driver_spi /home/matit/esp/idf/esp-idf/components/esp_driver_touch_sens /home/matit/esp/idf/esp-idf/components/esp_driver_tsens /home/matit/esp/idf/esp-idf/components/esp_driver_uart /home/matit/esp/idf/esp-idf/components/esp_driver_usb_serial_jtag /home/matit/esp/idf/esp-idf/components/esp_eth /home/matit/esp/idf/esp-idf/components/esp_event /home/matit/esp/idf/esp-idf/components/esp_gdbstub /home/matit/esp/idf/esp-idf/components/esp_hid /home/matit/esp/idf/esp-idf/components/esp_http_client /home/matit/esp/idf/esp-idf/components/esp_http_server /home/matit/esp/idf/esp-idf/components/esp_https_ota /home/matit/esp/idf/esp-idf/components/esp_https_server /home/matit/esp/idf/esp-idf/components/esp_hw_support /home/matit/esp/idf/esp-idf/components/esp_lcd /home/matit/esp/idf/esp-idf/components/esp_local_ctrl /home/matit/esp/idf/esp-idf/components/esp_mm /home/matit/esp/idf/esp-idf/components/esp_netif /home/matit/esp/idf/esp-idf/components/esp_netif_stack /home/matit/esp/idf/esp-idf/components/esp_partition /home/matit/esp/idf/esp-idf/components/esp_phy /home/matit/esp/idf/esp-idf/components/esp_pm /home/matit/esp/idf/esp-idf/components/esp_psram /home/matit/esp/idf/esp-idf/components/esp_ringbuf /home/matit/esp/idf/esp-idf/components/esp_rom /home/matit/esp/idf/esp-idf/components/esp_security /home/matit/esp/idf/esp-idf/components/esp_system /home/matit/esp/idf/esp-idf/components/esp_timer /home/matit/esp/idf/esp-idf/components/esp_vfs_console /home/matit/esp/idf/esp-idf/components/esp_wifi /home/matit/esp/idf/esp-idf/components/espcoredump /home/matit/esp/idf/esp-idf/components/esptool_py /home/matit/esp/idf/esp-idf/components/fatfs /home/matit/esp/idf/esp-idf/components/freertos /home/matit/esp/idf/esp-idf/components/hal /home/matit/esp/idf/esp-idf/components/heap /home/matit/esp/idf/esp-idf/components/http_parser /home/matit/esp/idf/esp-idf/components/idf_test /home/matit/esp/idf/esp-idf/components/ieee802154 /home/matit/esp/idf/esp-idf/components/json /home/matit/esp/idf/esp-idf/components/log /home/matit/esp/idf/esp-idf/components/lwip /home/matit/esp/projects/Ejercicio_2/main /home/matit/esp/idf/esp-idf/components/mbedtls /home/matit/esp/idf/esp-idf/components/mqtt /home/matit/esp/idf/esp-idf/components/newlib /home/matit/esp/idf/esp-idf/components/nvs_flash /home/matit/esp/idf/esp-idf/components/nvs_sec_provider /home/matit/esp/idf/esp-idf/components/openthread /home/matit/esp/idf/esp-idf/components/partition_table /home/matit/esp/idf/esp-idf/components/perfmon /home/matit/esp/idf/esp-idf/components/protobuf-c /home/matit/esp/idf/esp-idf/components/protocomm /home/matit/esp/idf/esp-idf/components/pthread /home/matit/esp/idf/esp-idf/components/rt /home/matit/esp/idf/esp-idf/components/sdmmc /home/matit/esp/idf/esp-idf/components/soc /home/matit/esp/idf/esp-idf/components/spi_flash /home/matit/esp/idf/esp-idf/components/spiffs /home/matit/esp/idf/esp-idf/components/tcp_transport /home/matit/esp/idf/esp-idf/components/ulp /home/matit/esp/idf/esp-idf/components/unity /home/matit/esp/idf/esp-idf/components/usb /home/matit/esp/idf/esp-idf/components/vfs /home/matit/esp/idf/esp-idf/components/wear_levelling /home/matit/esp/idf/esp-idf/components/wifi_provisioning /home/matit/esp/idf/esp-idf/components/wpa_supplicant /home/matit/esp/idf/esp-idf/components/xtensa
+-- Configuring done (5.3s)
+-- Generating done (0.6s)
+-- Build files have been written to: /home/matit/esp/projects/Ejercicio_2/build
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Ejercicio_2.c.obj
+[2/10] Linking C static library esp-idf/main/libmain.a
+[3/10] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/matit/esp/projects/Ejercicio_2/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script /home/matit/esp/idf/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_security esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/matit/esp/idf/esp-idf/components/bootloader /home/matit/esp/idf/esp-idf/components/bootloader_support /home/matit/esp/idf/esp-idf/components/efuse /home/matit/esp/idf/esp-idf/components/esp_app_format /home/matit/esp/idf/esp-idf/components/esp_bootloader_format /home/matit/esp/idf/esp-idf/components/esp_common /home/matit/esp/idf/esp-idf/components/esp_hw_support /home/matit/esp/idf/esp-idf/components/esp_rom /home/matit/esp/idf/esp-idf/components/esp_security /home/matit/esp/idf/esp-idf/components/esp_system /home/matit/esp/idf/esp-idf/components/esptool_py /home/matit/esp/idf/esp-idf/components/freertos /home/matit/esp/idf/esp-idf/components/hal /home/matit/esp/idf/esp-idf/components/log /home/matit/esp/idf/esp-idf/components/bootloader/subproject/main /home/matit/esp/idf/esp-idf/components/bootloader/subproject/components/micro-ecc /home/matit/esp/idf/esp-idf/components/newlib /home/matit/esp/idf/esp-idf/components/partition_table /home/matit/esp/idf/esp-idf/components/soc /home/matit/esp/idf/esp-idf/components/spi_flash /home/matit/esp/idf/esp-idf/components/xtensa
+-- Configuring done (4.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/matit/esp/projects/Ejercicio_2/build/bootloader
+[1/1] cd /home/matit/esp/projects/Ejercicio_2/build/bootloader/esp-idf/esptool_py && /home/matit/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python /home/matit/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/matit/esp/projects/Ejercicio_2/build/bootloader/bootloader.bin
+Bootloader binary size 0x6650 bytes. 0x9b0 bytes (9%) free.
+[4/10] No install step for 'bootloader'
+[5/10] Completed 'bootloader'
+[6/10] Generating ld/sections.ld
+[7/10] Building C object CMakeFiles/Ejercicio_2.elf.dir/project_elf_src_esp32.c.obj
+[8/10] Linking CXX executable Ejercicio_2.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.9.dev6
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/matit/esp/projects/Ejercicio_2/build/Ejercicio_2.bin
+[10/10] cd /home/matit/esp/projects/Ejercicio_2/build/esp-idf/esptool_py && /home/matit/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python /home/matit/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/matit/esp/projects/Ejercicio_2/build/partition_table/partition-table.bin /home/matit/esp/projects/Ejercicio_2/build/Ejercicio_2.bin
+Ejercicio_2.bin binary size 0x2f1b0 bytes. Smallest app partition is 0x100000 bytes. 0xd0e50 bytes (82%) free.

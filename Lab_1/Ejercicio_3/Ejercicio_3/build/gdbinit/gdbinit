@@ -1,0 +1,2 @@
+source /home/matit/esp/projects/Ejercicio_3/build/gdbinit/symbols
+source /home/matit/esp/projects/Ejercicio_3/build/gdbinit/connect
