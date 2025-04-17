@@ -1,0 +1,26 @@
+Command: ninja all
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/matit/esp/projects/Ejercicio_5/build/bootloader/esp-idf/esptool_py && /home/matit/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python /home/matit/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/matit/esp/projects/Ejercicio_5/build/bootloader/bootloader.bin
+Bootloader binary size 0x6650 bytes. 0x9b0 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] cd /home/matit/esp/projects/Ejercicio_5/build/esp-idf/main && /home/matit/esp/projects/Ejercicio_5/build/littlefs_py_venv/bin/littlefs-python create /home/matit/esp/projects/Ejercicio_5/partition /home/matit/esp/projects/Ejercicio_5/build/storage.bin -v --fs-size=0x200000 --name-max=64 --block-size=4096
+LittleFS Configuration:
+  Block Size:       4096  /  0x1000
+  Image Size:    2097152  /  0x200000
+  Block Count:       512
+  Name Max:           64
+  Image:       /home/matit/esp/projects/Ejercicio_5/build/storage.bin
+Adding File:      audio_data.h
+[5/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Ejercicio_5.c.obj
+[6/10] Linking C static library esp-idf/main/libmain.a
+[7/10] Generating ld/sections.ld
+[8/10] Linking CXX executable Ejercicio_5.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.9.dev6
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/matit/esp/projects/Ejercicio_5/build/Ejercicio_5.bin
+[10/10] cd /home/matit/esp/projects/Ejercicio_5/build/esp-idf/esptool_py && /home/matit/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python /home/matit/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/matit/esp/projects/Ejercicio_5/build/partition_table/partition-table.bin /home/matit/esp/projects/Ejercicio_5/build/Ejercicio_5.bin
+Ejercicio_5.bin binary size 0x6a320 bytes. Smallest app partition is 0x100000 bytes. 0x95ce0 bytes (59%) free.

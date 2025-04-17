@@ -1,0 +1,6 @@
+Hay que conectar el ESP32
+
+get_esp32
+idf.py build
+idf.py flash -p /dev/ttyUSB0
+idf.py -p /dev/ttyUSB0 monitor

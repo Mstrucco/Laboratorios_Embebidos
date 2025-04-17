@@ -1,0 +1,2 @@
+source /home/matit/esp/projects/Ejercicio_4/build/bootloader/gdbinit/symbols
+source /home/matit/esp/projects/Ejercicio_4/build/bootloader/gdbinit/connect

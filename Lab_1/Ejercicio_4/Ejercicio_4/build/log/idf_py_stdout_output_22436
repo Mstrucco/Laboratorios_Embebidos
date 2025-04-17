@@ -1,0 +1,78 @@
+Command: /home/matit/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python /home/matit/esp/idf/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/matit/esp/projects/Ejercicio_4/build/Ejercicio_4.elf /home/matit/esp/projects/Ejercicio_4/build/bootloader/bootloader.elf -m '/home/matit/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python' '/home/matit/esp/idf/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+ets Jun  8 2016 00:22:57
+
+�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6364
+ho 0 tail 12 room 4
+load:0x40078000,len:15880
+ho 0 tail 12 room 4
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (30) boot: ESP-IDF v5.5-dev-2715-ga45d713b03-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Apr 17 2025 09:17:48[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0db90h ( 56208) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0001dbb8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001dbdc vaddr=3ffb0000 size=0243ch (  9276) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a80h ( 92800) map[0m
+[0;32mI (154) esp_image: segment 4: paddr=00036aa8 vaddr=3ffb243c size=00010h (    16) load[0m
+[0;32mI (154) esp_image: segment 5: paddr=00036ac0 vaddr=40080000 size=10424h ( 66596) load[0m
+[0;32mI (183) esp_image: segment 6: paddr=00046eec vaddr=50000000 size=000a4h (   164) load[0m
+[0;32mI (192) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (205) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (205) esp_psram: Speed: 40MHz[0m
+[0;32mI (205) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (211) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (219) cpu_start: Multicore app[0m
+[0;32mI (1125) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1133) cpu_start: Pro cpu start user code[0m
+[0;32mI (1133) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1133) app_init: Application information:[0m
+[0;32mI (1133) app_init: Project name:     Ejercicio_4[0m
+[0;32mI (1138) app_init: App version:      1[0m
+[0;32mI (1141) app_init: Compile time:     Apr 17 2025 09:36:20[0m
+[0;32mI (1146) app_init: ELF file SHA256:  1d1cb9a6a...[0m
+[0;32mI (1151) app_init: ESP-IDF:          v5.5-dev-2715-ga45d713b03-dirty[0m
+[0;32mI (1157) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1161) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1165) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1169) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1175) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1180) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (1185) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1191) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1197) heap_init: At 40090424 len 0000FBDC (62 KiB): IRAM[0m
+[0;32mI (1202) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1210) spi_flash: detected chip: generic[0m
+[0;32mI (1212) spi_flash: flash io: dio[0m
+[0;33mW (1215) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1228) main_task: Started on CPU0[0m
+[0;32mI (1238) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1238) main_task: Calling app_main()[0m
+[0;32mI (1238) MEMORIAS: Iniciando mediciones...[0m
+[0;32mI (1238) MEMORIAS: DRAM (estática): 1536 ciclos[0m
+[0;32mI (1248) MEMORIAS: IRAM (estática): 583 ciclos[0m
+[0;32mI (1248) MEMORIAS: RTC_DATA: 3662 ciclos[0m
+[0;32mI (1258) MEMORIAS: FLASH (.rodata): 2793 ciclos[0m
+[0;32mI (1258) MEMORIAS: DRAM (malloc): 264 ciclos[0m
+[0;32mI (1258) MEMORIAS: IRAM (exec heap): 583 ciclos[0m
+[0;32mI (1268) MEMORIAS: PSRAM: 641 ciclos[0m
+[0;32mI (1268) main_task: Returned from app_main()[0m

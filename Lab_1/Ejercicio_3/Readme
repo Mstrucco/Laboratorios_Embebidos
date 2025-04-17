@@ -1,0 +1,6 @@
+Hay que pegar image array c en el ejercicio3.py en el lugar adecuado, el resultado se copia al resultado.py
+
+get_esp32
+idf.py build
+idf.py flash -p /dev/ttyUSB0
+idf.py -p /dev/ttyUSB0 monitor

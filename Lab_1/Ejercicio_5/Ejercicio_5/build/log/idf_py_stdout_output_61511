@@ -1,0 +1,81 @@
+Command: ninja flash
+[1/6] cd /home/matit/esp/projects/Ejercicio_5/build/esp-idf/esptool_py && /home/matit/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python /home/matit/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/matit/esp/projects/Ejercicio_5/build/partition_table/partition-table.bin /home/matit/esp/projects/Ejercicio_5/build/Ejercicio_5.bin
+Ejercicio_5.bin binary size 0x6a320 bytes. Smallest app partition is 0x100000 bytes. 0x95ce0 bytes (59%) free.
+[2/6] Performing build step for 'bootloader'
+[1/1] cd /home/matit/esp/projects/Ejercicio_5/build/bootloader/esp-idf/esptool_py && /home/matit/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python /home/matit/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/matit/esp/projects/Ejercicio_5/build/bootloader/bootloader.bin
+Bootloader binary size 0x6650 bytes. 0x9b0 bytes (9%) free.
+[3/6] No install step for 'bootloader'
+[4/6] Completed 'bootloader'
+[5/6] cd /home/matit/esp/projects/Ejercicio_5/build/esp-idf/main && /home/matit/esp/projects/Ejercicio_5/build/littlefs_py_venv/bin/littlefs-python create /home/matit/esp/projects/Ejercicio_5/partition /home/matit/esp/projects/Ejercicio_5/build/storage.bin -v --fs-size=0x200000 --name-max=64 --block-size=4096
+LittleFS Configuration:
+  Block Size:       4096  /  0x1000
+  Image Size:    2097152  /  0x200000
+  Block Count:       512
+  Name Max:           64
+  Image:       /home/matit/esp/projects/Ejercicio_5/build/storage.bin
+Adding File:      audio_data.h
+[5/6] cd /home/matit/esp/idf/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/matit/esp/idf/esp-idf -D "SERIAL_TOOL=/home/matit/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python;;/home/matit/esp/idf/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/matit/esp/projects/Ejercicio_5/build -P /home/matit/esp/idf/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 Ejercicio_5.bin 0x8000 partition_table/partition-table.bin 0x110000 storage.bin
+esptool.py v4.9.dev6
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 08:f9:e0:c6:ae:84
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0007afff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00110000 to 0x0030ffff...
+SHA digest in image updated
+Compressed 26192 bytes to 16518...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000759b... (100 %)
+Wrote 26192 bytes (16518 compressed) at 0x00001000 in 0.6 seconds (effective 339.9 kbit/s)...
+Hash of data verified.
+Compressed 434976 bytes to 251431...
+Writing at 0x00010000... (6 %)
+Writing at 0x0001a312... (12 %)
+Writing at 0x0001fcf0... (18 %)
+Writing at 0x00026a44... (25 %)
+Writing at 0x0002d41c... (31 %)
+Writing at 0x00032a57... (37 %)
+Writing at 0x00038af9... (43 %)
+Writing at 0x00041d88... (50 %)
+Writing at 0x00048524... (56 %)
+Writing at 0x000512c5... (62 %)
+Writing at 0x00056a84... (68 %)
+Writing at 0x0005e42e... (75 %)
+Writing at 0x00063d5c... (81 %)
+Writing at 0x000698c6... (87 %)
+Writing at 0x00070d80... (93 %)
+Writing at 0x00077f92... (100 %)
+Wrote 434976 bytes (251431 compressed) at 0x00010000 in 5.5 seconds (effective 629.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.0 seconds (effective 688.4 kbit/s)...
+Hash of data verified.
+Compressed 2097152 bytes to 171084...
+Writing at 0x00110000... (9 %)
+Writing at 0x00238eed... (18 %)
+Writing at 0x002476c9... (27 %)
+Writing at 0x00257653... (36 %)
+Writing at 0x00266c38... (45 %)
+Writing at 0x00274bdb... (54 %)
+Writing at 0x00281d19... (63 %)
+Writing at 0x00292b57... (72 %)
+Writing at 0x002a71b5... (81 %)
+Writing at 0x002b7923... (90 %)
+Writing at 0x002c90ca... (100 %)
+Wrote 2097152 bytes (171084 compressed) at 0x00110000 in 10.5 seconds (effective 1600.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
